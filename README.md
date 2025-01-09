@@ -64,7 +64,7 @@ Em relação a marketing:
 <img src="https://github.com/user-attachments/assets/2aa6a20f-470f-480a-b35b-de99669aa493" alt="Projeto 8" width="200"/>
 
 ### Frequência de visitas
-<img src="https://github.com/user-attachments/assets/15d32c21-fa5b-4185-9c51-8243f2143341" alt="Projeto 8" width="200"->
+<img src="https://github.com/user-attachments/assets/15d32c21-fa5b-4185-9c51-8243f2143341" alt="Projeto 8" width="200"/>
 
 ### Dados das visitas
 <img src="https://github.com/user-attachments/assets/816d40d9-9609-4272-bb76-9eb4f023e129" alt="Projeto 8" width="200"/>
