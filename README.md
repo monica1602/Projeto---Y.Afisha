@@ -127,7 +127,7 @@ Em relação a marketing:
 <img src="https://github.com/user-attachments/assets/7c97dc56-ac7e-425a-ab3b-ae29a48e8a56" alt="Projeto 8" width="200"/>
 
 ### ROI fonte 10
-<img src="https://github.com/user-attachments/assets/c66c95ba-7bcc-4fc8-bdf5-480922c937ae" açt="Projeto 8" width="200"/>
+<img src="https://github.com/user-attachments/assets/c66c95ba-7bcc-4fc8-bdf5-480922c937ae" alt="Projeto 8" width="200"/>
 
 ## Resultados
 - Foi possível concluir que existe diferença entre os diferentes source
