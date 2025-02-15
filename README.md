@@ -1,23 +1,38 @@
 # Projeto de Análise de Dados Y.Afisha
 
 ## Descrição do Projeto
-Esse projeto consiste em uma análise dos acessos ao site da Y.Afisha. A tarefa é ajudar a empresa a otimizar as despesas com marketing. Para isso, será utilizado os diários do servidor com dados sobre os acessos a Y.Afisha de janeiro de 2017 até dezembro de 2018, arquivo de despejo com todos os pedidos feitos durante o período e estatísticas de despesas com marketing. Foi feito uma análise de como as pessoas usam o produto, quando elas começam a comprar, quanto dinheiro  cada cliente traz para a empresa e quando as despesas serão cobertas.
+Este projeto consiste na análise dos dados de acesso ao site da Y.Afisha, com o objetivo de fornecer informações que permitam à empresa otimizar suas despesas com marketing. A análise é baseada nos diários do servidor, que contêm informações sobre os acessos à plataforma durante o período de janeiro de 2017 a dezembro de 2018, além de arquivos de pedidos, que detalham as transações realizadas pelos usuários, e nas estatísticas relacionadas às despesas com marketing. O foco da análise foi entender o comportamento dos usuários ao utilizar a plataforma, identificar o momento em que eles iniciam as compras, calcular o valor que cada cliente contribui para a empresa e estimar o ponto de equilíbrio financeiro, ou seja, quando as despesas com marketing começam a ser compensadas pelas receitas geradas.
 
 ## As tarefas são:
 Em relação aos produtos:
 - Quantas pessoas usam o site cada dia, semana e mês?
-- Quantas sessões ocorrem por dia? (um usuário pode realizar várias sessões)
-- Que comprimento tem cada sessão?
+A análise será focada na quantidade de usuários distintos que acessam o site em diferentes intervalos de tempo, seja diariamente, semanalmente ou mensalmente. Isso ajuda a medir o tráfego e entender os padrões de engajamento.
+- Quantas sessões ocorrem por dia?
+Cada vez que um usuário acessa o site, uma nova sessão é registrada. A contagem de sessões diárias permitirá avaliar o volume de interações com o site ao longo do tempo, considerando que um único usuário pode ter várias sessões em um dia.
+- Qual é o comprimento de cada sessão?
+O tempo médio de duração das sessões, desde o momento que o usuário entra no site até a sua saída, é um dado relevante para medir o engajamento do usuário e a eficiência do site em reter visitantes.
 - Com que frequência os usuários voltam?
-Em relação as vendas:
+A análise da frequência de retorno dos usuários permite identificar o nível de fidelidade e engajamento do público com o site, observando quantos usuários retornam após a primeira visita.
+
+Em relação às vendas:
 - Quando as pessoas começam a comprar?
-- Quantos pedidos os clientes fazem durante um detereminado período de tempo?
+Analisar o momento em que os usuários iniciam suas compras no site, incluindo o tempo entre o primeiro acesso e a primeira compra, ajudará a entender o comportamento de conversão dos usuários.
+- Quantos pedidos os clientes fazem durante um determinado período de tempo?
+A análise do número de pedidos feitos por cada cliente ao longo de um período específico (semanal, mensal, etc.) permite entender o comportamento de compra repetida e as tendências de consumo.
 - Qual é o volume médio de uma compra?
+O valor médio de cada pedido permitirá avaliar o ticket médio de vendas e ajudar a identificar o perfil de gasto dos consumidores.
 - Quanto dinheiro eles trazem para a empresa (LTV)?
-Em relação a marketing:
-- Quanto dinheiro foi gasto? No total/ por origem/ ao longo do tempo
+O Life Time Value (LTV) de um cliente representa a receita total gerada por um cliente durante seu tempo de relacionamento com a empresa. A análise do LTV é essencial para avaliar o valor de um cliente ao longo do tempo.
+
+Em relação ao marketing:
+- Quanto dinheiro foi gasto? No total, por origem e ao longo do tempo?
+O rastreamento dos gastos com marketing, tanto no total quanto segregados por origem (ex: anúncios pagos, marketing orgânico, campanhas específicas), ajudará a entender a distribuição do orçamento e a evolução do investimento ao longo do tempo.
 - Quanto custou a aquisição de clientes para cada origem?
+A análise do Custo de Aquisição de Clientes (CAC) por origem permitirá entender a eficiência das diferentes estratégias de marketing utilizadas pela empresa.
 - Os investimentos valeram a pena? (ROI)
+O Retorno sobre o Investimento (ROI) será calculado para avaliar a eficácia das campanhas de marketing, comparando o custo com a receita gerada, para determinar se os investimentos realmente trouxeram retornos positivos.
+
+Essas questões são cruciais para a otimização das operações e estratégias de marketing da Y.Afisha, fornecendo insights valiosos sobre o comportamento dos clientes, o desempenho das vendas e a eficiência dos investimentos em marketing.
 
 ## Dicionário de dados
 - visits: os diários do servidor com dados sobre os acessos ao site
@@ -36,15 +51,15 @@ Em relação a marketing:
   - 'costs': despesas com esta origem de anúncio neste dia
  
 ## Ferramentas e Bibliotecas utilizadas
-- Pyhton: Linguagem principal utilziada para a análise
-- Pandas: Biblioteca para manipulação e análise de dados
-- Matplotlib: Biblioteca para gerar gráficos
-- Numpy: Biblioteca que permite trabalhar com objetos multidimensionais, como matrizes e sequências
-- Math: Biblioteca que permite usar funções matemáticas
-- Seaborn: Biblioteca de visualização de dados
-- Scipy: Biblioteca que fornece uma manipulação conveniente e rápida de um array N-dimensional
-- Ploty.express: Biblioteca que permite criar visualizações rápidas e eficientes
-- Datetime: Biblioteca para manipulação de datas e horas
+- Python: Linguagem principal utilizada para análise de dados, muito versátil e com várias bibliotecas específicas para análise estatística e visualização de dados.
+- Pandas: Biblioteca essencial para a manipulação e análise de dados, proporcionando estruturas de dados eficientes como DataFrames, que facilitam a limpeza e análise de grandes volumes de informações.
+- Matplotlib: Biblioteca amplamente utilizada para a criação de gráficos estáticos, permitindo a visualização de dados de forma clara e acessível.
+- Numpy: Biblioteca poderosa para trabalhar com arrays e matrizes multidimensionais, essencial para cálculos numéricos e operações matemáticas rápidas.
+- Math: Biblioteca matemática padrão de Python, que fornece funções para cálculos matemáticos mais avançados, como operações trigonométricas, exponenciais, logaritmos, entre outras.
+- Seaborn: Biblioteca baseada no Matplotlib, com foco na criação de gráficos mais estéticos e informativos, permitindo explorar e visualizar os dados de maneira mais eficaz.
+- Scipy: Biblioteca para manipulação avançada de arrays N-dimensionais, além de fornecer funções úteis para integração, otimização, álgebra linear e estatísticas.
+- Plotly.express: Biblioteca para criação de gráficos interativos de forma rápida e eficiente, sendo uma excelente opção para dashboards e relatórios dinâmicos.
+- Datetime: Biblioteca que oferece diversas funcionalidades para manipulação de datas e horas, permitindo realizar operações como cálculos de tempo, formatação e extração de partes específicas de datas.
 
 ## Imagens
 
@@ -130,31 +145,31 @@ Em relação a marketing:
 <img src="https://github.com/user-attachments/assets/c66c95ba-7bcc-4fc8-bdf5-480922c937ae" alt="Projeto 8" width="200"/>
 
 ## Resultados
-- Foi possível concluir que existe diferença entre os diferentes source
-- O investimento vale a pena
-- Existe diferença entre como as pessoas usam o produto diariamente, semanalmente e mensalmente
-- Com que frequência as pessoas usam
-- O tempo que dura cada sessão
-- A data de início que as pessoas começaram a usar
-- Dinheiro que os clientes trazem para a empresa
-- A diferença entre os ROIs
+- Foi possível concluir que há diferenças significativas entre as diferentes fontes de tráfego, impactando diretamente no comportamento dos usuários e nas métricas de aquisição.
+- O investimento em marketing mostrou-se vantajoso, pois o retorno sobre o investimento (ROI) indicou que os custos foram compensados pelos lucros gerados.
+- Há diferenças notáveis no comportamento dos usuários em relação à frequência de uso do produto: enquanto alguns usuários acessam o site diariamente, outros fazem isso semanal ou mensalmente.
+- A análise de uso revelou padrões de frequência, com um número significativo de usuários retornando para sessões regulares, enquanto outros têm interações esporádicas.
+- O tempo médio de cada sessão foi analisado e revelou-se um fator importante na avaliação da experiência do usuário, com variações dependendo da origem de tráfego e do comportamento do cliente.
+- A data de início de uso do produto foi identificada, permitindo traçar o momento exato em que os usuários começaram a interagir mais ativamente com o site.
+- O LTV (Lifetime Value) dos clientes foi calculado para entender quanto dinheiro cada cliente gera para a empresa ao longo do tempo, permitindo ajustes nas estratégias de aquisição.
+- A diferença entre os ROIs de diferentes canais foi analisada, indicando quais fontes de tráfego e campanhas publicitárias tiveram um impacto mais positivo nas finanças da empresa.
 
 ## Aprendizados
-- Análise de dados
-- Qualidade dos dados
-- Tratar os dados modificando tipos de colunas, valores ausentes, valores duplciados
-- Criação de novas colunas com dados referentes aos dias, meses e semana
-- Agrupar dados
-- Análise de coortes
-- Construção e análise de gráficos
-- Construção e análise de mapas de calor
-- Calcular ROI, LVT, CAC, ROMI
+- Análise de dados: A primeira etapa do processo envolveu a exploração e análise dos dados disponíveis, visando identificar padrões e insights relevantes para otimização das despesas com marketing.
+- Qualidade dos dados: A verificação da qualidade dos dados foi essencial para garantir que as conclusões tiradas fossem precisas e confiáveis. Isso incluiu verificar a consistência dos dados, identificar valores ausentes e valores duplicados.
+- Tratar os dados modificando tipos de colunas, valores ausentes, valores duplicados: Durante o pré-processamento, os tipos de dados das colunas foram ajustados conforme necessário, e valores ausentes e duplicados foram tratados adequadamente para não comprometer a análise.
+- Criação de novas colunas com dados referentes aos dias, meses e semana: Para facilitar a análise temporal, novas colunas foram criadas com informações sobre os dias da semana, meses e semanas, permitindo observar padrões de comportamento dos usuários ao longo do tempo.
+- Agrupar dados: Dados foram agrupados por diferentes períodos (diário, semanal, mensal) e outras características relevantes (origem do tráfego, por exemplo) para entender melhor as tendências e insights relacionados aos comportamentos dos usuários e métricas de marketing.
+- Análise de coortes: A análise de coortes foi realizada para segmentar usuários com base no momento em que começaram a utilizar o site, permitindo identificar diferenças de comportamento entre grupos de usuários ao longo do tempo.
+- Construção e análise de gráficos: Foram gerados gráficos para visualizar a distribuição dos dados e entender padrões de comportamento de forma clara e eficiente.
+- Construção e análise de mapas de calor: Mapas de calor foram utilizados para identificar padrões geográficos e horários de maior atividade no site, ajudando a otimizar campanhas de marketing e entender os pontos de maior interesse para os usuários.
+- Calcular ROI, LTV, CAC, ROMI: O retorno sobre o investimento (ROI), valor do tempo de vida do cliente (LTV), custo de aquisição de cliente (CAC) e retorno sobre o marketing (ROMI) foram calculados para avaliar a eficácia das campanhas publicitárias e investimentos em marketing. Esses cálculos ajudaram a otimizar os gastos e aumentar a rentabilidade.
 
 ## Contexto real
-- Empresas de marketing
-- Novas campanhas de marketing
-- Empresas que querem melhorar sua área de marketing
-- Novas empresas que querem lançar campanhas de marketing eficientes
+- Empresas de marketing: Agências e consultorias que buscam otimizar campanhas e investimentos, utilizando dados detalhados para entender o comportamento do cliente e o retorno das campanhas.
+- Novas campanhas de marketing: Empresas que estão planejando ou já executando campanhas de marketing e desejam mensurar a eficácia dessas campanhas, seja por origem de tráfego ou por ROI.
+- Empresas que querem melhorar sua área de marketing: Organizações que têm áreas de marketing em operação, mas buscam insights sobre como melhorar sua eficiência, segmentar melhor os públicos e tomar decisões mais embasadas em dados.
+- Novas empresas que querem lançar campanhas de marketing eficientes: Startups e empresas que estão começando e desejam estabelecer campanhas de marketing bem estruturadas e mensuráveis desde o início, maximizando o retorno sobre o investimento.
   
 ## Como executar o Projeto
 - Clone o repositório
